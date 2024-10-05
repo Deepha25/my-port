@@ -1,0 +1,246 @@
+section {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-top: 6rem;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0A205E;
+    padding: 6.2rem;
+    flex-wrap: wrap; /* Allows items to wrap for smaller screens */
+}
+
+.profile-image {
+    width: 250px; /* Reduced size for better responsiveness */
+    height: 250px; /* Adjusted height */
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 2rem; /* Space between image and text */
+    flex-shrink: 0; /* Prevents the image from shrinking */
+}
+
+#hero .highlight {
+    background: linear-gradient(10deg, #FF6F61, #1543C4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem; /* Adjusted for smaller screens */
+    font-weight: 700;
+}
+
+#hero .tagline {
+    font-size: 2.5rem; /* Adjusted for smaller screens */
+    font-weight: 600;
+    color: #FF6F61;
+    margin-top: 0.5rem;
+}
+
+#about:before,
+#education:before,
+#internship:before,
+#skills:before,
+#contact:before,
+#design:before {
+    content: "";
+    display: block;
+    height: 80px; /* Adjust this according to your header's height */
+    margin-top: -80px; /* Same value as height */
+    visibility: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #1543C4;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #1543C4;
+    padding-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.education-block {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    text-align: left;
+}
+
+h3 {
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+#about, #education, #internship, #skills, #contact, #design {
+    background-color: #ffffff;
+    padding: 50px;
+    color: black;
+    width: 100%; /* Full width */
+    box-sizing: border-box;
+}
+
+#design {
+    background-color: #ffffff;
+    color: black;
+    padding: 2rem;
+}
+
+#design h2 {
+    text-align: left;
+    margin-bottom: 1.5rem;
+    color: #1543C4;
+}
+
+.design-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2rem; /* Space between project items */
+    align-items: stretch; /* Align items to stretch the entire height of the grid cell */
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column; /* Stack image and description */
+    align-items: center; /* Center items */
+    text-align: center; /* Center text within the item */
+}
+
+.project-item img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.design-description {
+    padding: 1rem; /* Padding around the description */
+}
+
+#design {
+    background-color: #ffffff;
+    color: black;
+    padding: 2rem;
+}
+
+#design h2 {
+    text-align: left;
+    margin-bottom: 1.5rem;
+    color: #1543C4;
+}
+
+
+
+.design-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* One project per row */
+    gap: 3rem;
+    align-items: center;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: row; /* Places image and description side by side */
+    align-items: flex-start; /* Aligns top of image and description */
+    gap: 2rem; /* Adds space between the image and description */
+}
+
+.project-item img {
+    width: 90%; /* Smaller image size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.design-description {
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.5; /* Adds spacing between lines for readability */
+    max-width: 1000px; /* Restricts the width of the description */
+}
+#contact div {
+    margin-bottom: 1rem;
+}
+
+
+#contact input, #contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    align-self: flex-start;
+}
+
+footer {
+    background-color: #0A205E;
+    position: sticky;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.2rem;
+    bottom: 0;
+    width: 100%; /* Make footer full width */
+}
+/* Contact Form Styling */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top:60px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding-right: 40px;
+}
+
+#contact form div {
+    margin-bottom: 15px;
+}
+
+#contact label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    border-color: #0A205E;
+    border-style:dashed;
+    
+}
+
+#contact textarea {
+    resize: vertical; /* Allow vertical resizing */
+    height: 100px;
+}
+
+.view-button {
+    background-color:#0A205E; /* Adjust based on your color scheme */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+     font-family: 'Poppins';
+     cursor: pointer;
+}
+
+.view-button:hover {
+    background-color:#FF6F61;
+}

@@ -1,0 +1,86 @@
+html {
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: #0A205E; /* Your original background color */
+    z-index: 1000;
+    height: 60px; /* Set a fixed height for your navbar */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 2px;
+    background-color:#FF6F61;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    flex-grow: 1; 
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff; /* Your text color */
+    transition: color 0.3s; /* Smooth hover transition */
+}
+
+.nav-links a:hover {
+    color: #FF6F61; /* Your hover color */
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+        padding-top: 10px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 40px; /* Adjust based on your header height */
+        left: 0;
+        background-color: #0A205E;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 0px;
+        color: #FF6F61;
+    }
+}
+
+/* Add padding to sections */
+section {
+    padding-top: 80px; /* Adjust this value according to your navbar height */
+    margin-bottom: 20px; /* Optional: Add margin for spacing */
+}
